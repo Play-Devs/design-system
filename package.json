@@ -6,9 +6,9 @@
   "module": "build/index.es.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c", 
+    "build": "rollup -c",
     "storybook": "storybook dev -p 6006",
-    "start": "storybook dev -p 6006"
+    "start": "react-scripts start"
   },
   "repository": {
     "type": "git",
@@ -32,18 +32,37 @@
     "@rollup/plugin-image": "^3.0.3",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@storybook/react": "^8.6.4",
+    "autoprefixer": "^10.4.21",
     "babel-loader": "^10.0.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
+    "postcss": "^8.5.3",
+    "react-scripts": "^5.0.1",
     "rollup": "^2.79.2",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-terser": "^7.0.2"
+    "rollup-plugin-sass": "^1.15.2",
+    "rollup-plugin-scss": "^4.0.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.85.1",
+    "sass-loader": "^16.0.5"
   },
   "peerDependencies": {
-    "react": ">=16.13.0",
-    "react-dom": ">=16.13.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "files": [
     "build"
-  ]
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

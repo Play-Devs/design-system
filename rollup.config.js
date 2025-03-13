@@ -4,11 +4,11 @@ import resolve from '@rollup/plugin-node-resolve'
 import image from '@rollup/plugin-image'
 import external from 'rollup-plugin-peer-deps-external'
 import { terser } from 'rollup-plugin-terser'
-import scss from 'rollup-plugin-scss' // Importando o plugin SCSS
+import scss from 'rollup-plugin-scss' 
 import pkg from './package.json'
 
 export default {
-  input: './src/index.js',
+  input: './src/index.js',  
   output: [
     {
       file: pkg.main,
@@ -24,7 +24,7 @@ export default {
   plugins: [
     external(),
     resolve({
-      extensions: ['.jsx', '.js', '.scss'] // Adicionando .scss nas extensões
+      extensions: ['.jsx', '.js'] 
     }),
     babel({
       babelHelpers: 'inline',
@@ -35,8 +35,11 @@ export default {
     commonjs(),
     image(),
     scss({
-      output: 'dist/styles.css', // Onde o arquivo compilado de SCSS será gerado
-      outputStyle: 'compressed', // Comprime o arquivo CSS gerado
+        output: 'dist/styles.css',
+        outputStyle: 'compressed',
+        watch: 'src', 
+        failOnError: true, 
+        includePaths: ['src/styles'], 
     }),
     terser()
   ]

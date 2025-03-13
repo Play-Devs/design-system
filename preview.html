@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System Preview</title>  
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>  
+  <link rel="stylesheet" href="./dist/styles.css"> 
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">    
+    const Button = ({ label, variant, onClick }) => {
+      return (
+        <button 
+          className={`button button--${variant}`} 
+          onClick={onClick}
+        >
+          {label}
+        </button>
+      );
+    };
+    
+    function App() {
+      return (
+        <div className="container">
+          <h1>Design System - Botões</h1>
+          <div className="button-container">
+            <Button 
+              label="Solid" 
+              variant="solid" 
+              onClick={() => alert('Botão Solid clicado!')} 
+            />
+            <Button 
+              label="Subtle" 
+              variant="subtle" 
+              onClick={() => alert('Botão Subtle clicado!')} 
+            />
+            <Button 
+              label="Outline" 
+              variant="outline" 
+              onClick={() => alert('Botão Outline clicado!')} 
+            />
+          </div>
+        </div>
+      );
+    }
+    
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>  
+</body>
+</html>

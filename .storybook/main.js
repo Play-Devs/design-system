@@ -1,5 +1,5 @@
 module.exports = {
-  stories: ['../src/**/*.stories.js'],  // Aponte para as histórias dentro da pasta src
+  stories: ['../src/**/*.stories.js'],  
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-knobs',

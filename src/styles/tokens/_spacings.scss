@@ -1,0 +1,40 @@
+
+$spacing-unit: 8px !default;
+
+$spacing-xs: $spacing-unit * 1; // 8px
+$spacing-sm: $spacing-unit * 2; // 16px
+$spacing-md: $spacing-unit * 3; // 24px
+$spacing-lg: $spacing-unit * 4; // 32px
+$spacing-xl: $spacing-unit * 5; // 40px
+$spacing-xxl: $spacing-unit * 6; // 48px
+
+// Gaps entre elementos
+$gap-xs: $spacing-unit * 1;   // 8px
+$gap-sm: $spacing-unit * 2;   // 16px
+$gap-md: $spacing-unit * 3;   // 24px
+$gap-lg: $spacing-unit * 4;   // 32px
+$gap-xl: $spacing-unit * 5;   // 40px
+
+// Espacamento para margens e paddings
+$margin-xs: $spacing-unit * 1; // 8px
+$margin-sm: $spacing-unit * 2; // 16px
+$margin-md: $spacing-unit * 3; // 24px
+$margin-lg: $spacing-unit * 4; // 32px
+$margin-xl: $spacing-unit * 5; // 40px
+$margin-xxl: $spacing-unit * 6; // 48px
+
+$padding-xs: $spacing-unit * 1;
+$padding-sm: $spacing-unit * 2;
+$padding-md: $spacing-unit * 3;
+$padding-lg: $spacing-unit * 4;
+$padding-xl: $spacing-unit * 5;
+$padding-xxl: $spacing-unit * 6;
+
+// Espaçamento para containers
+$container-gutter: $spacing-unit * 3; // 24px
+$container-padding: $spacing-unit * 4; // 32px
+
+// Espaçamentos para títulos e textos
+$title-spacing: $spacing-unit * 2; // 16px
+$subtitle-spacing: $spacing-unit * 1.5; // 12px
+$text-spacing: $spacing-unit * 1; // 8px

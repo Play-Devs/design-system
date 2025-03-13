@@ -1,4 +1,3 @@
-// src/Button.stories.js
 import React from 'react';
 import Button from './Button'; 
 
@@ -7,4 +6,4 @@ export default {
   component: Button,  
 };
 
-export const Base = () => <Button>Click Me</Button>;  
+export const Base: React.FC = () => <Button label={'Click me'} onClick={() => {}} primary={''}></Button>;

@@ -1,0 +1,86 @@
+// _colors.scss
+
+// Paleta de cores principais (Primárias e Secundárias)
+$primary-color: #007bff;         // Azul (exemplo de cor primária)
+$secondary-color: #6c757d;       // Cinza (exemplo de cor secundária)
+
+// Cores de fundo e borda
+$background-color: #f8f9fa;      // Fundo claro
+$background-dark: #343a40;       // Fundo escuro
+$border-color: #dee2e6;          // Cor de borda neutra
+
+// Cores de texto
+$text-color: #212529;            // Cor de texto principal (preto suave)
+$text-light: #f8f9fa;            // Cor de texto claro (para fundo escuro)
+$text-muted: #6c757d;            // Cor de texto secundário (para texto secundário)
+
+// Cores de estados
+$success-color: #28a745;         // Cor para sucesso (verde)
+$danger-color: #dc3545;          // Cor para erro (vermelho)
+$warning-color: #ffc107;         // Cor para aviso (amarelo)
+$info-color: #17a2b8;            // Cor para informações (azul claro)
+$light-color: #f8f9fa;           // Cor clara (para fundo claro)
+$dark-color: #343a40;            // Cor escura (para fundo escuro)
+
+// Cores de destaque
+$highlight-color: #ff8c00;       // Cor de destaque laranja
+$highlight-secondary: #28a745;   // Cor de destaque secundária verde
+
+// Cores de borda e detalhes
+$border-light: #f1f3f5;          // Cor de borda clara (para bordas sutis)
+$border-dark: #343a40;           // Cor de borda escura (para temas escuros)
+
+// Cores para estados de interação (hover, active, focus)
+$hover-color: #0056b3;           // Cor de hover para links e botões (mais escuro)
+$active-color: #004085;          // Cor de ativo (para elementos em foco)
+$focus-color: #80bdff;           // Cor de foco (bordas de campos de formulário)
+$disabled-color: #e9ecef;        // Cor de desabilitado (para elementos inativos)
+
+// Gradientes (se necessário)
+$gradient-primary: linear-gradient(90deg, #007bff, #0056b3);   // Gradiente para o botão primário
+$gradient-success: linear-gradient(90deg, #28a745, #218838);   // Gradiente para sucesso
+
+// Escalas de cores (se desejado, para sombras ou gradientes)
+$gray-light: #d6d6d6;            // Tons mais claros de cinza
+$gray-dark: #343a40;             // Tons mais escuros de cinza
+
+// Cores para luzes e sombras
+$shadow-light: rgba(0, 0, 0, 0.1); // Sombra suave
+$shadow-medium: rgba(0, 0, 0, 0.25); // Sombra média
+$shadow-dark: rgba(0, 0, 0, 0.5);   // Sombra forte
+
+// Transparências e opacidades
+$transparent: transparent;        // Transparente
+$opacity-light: rgba(255, 255, 255, 0.7); // Cor branca com 70% de opacidade
+$opacity-dark: rgba(0, 0, 0, 0.7); // Cor preta com 70% de opacidade
+
+//
+// Explicação das Seções:
+// Cores Primárias e Secundárias:
+
+// $primary-color e $secondary-color são as cores que vão representar os principais componentes de interface, como botões e links.
+// Cores de Fundo e Borda:
+
+// Definimos cores como $background-color e $border-color para garantir que as áreas de fundo e as bordas tenham uma consistência em toda a aplicação. Isso ajuda a manter o contraste e a legibilidade.
+// Cores de Texto:
+
+// As cores de texto são essenciais para garantir boa legibilidade. $text-color será usado como a cor principal do texto, enquanto $text-muted é usado para textos menos importantes ou desativados.
+// Cores de Estado:
+
+// $success-color, $danger-color, $warning-color, $info-color são cores padrão para indicar diferentes estados ou feedbacks do sistema, como sucesso, erro e informações.
+// Cores de Destaque:
+
+// As cores de destaque são usadas para chamar atenção para algo importante, como links ou botões de ação. Exemplos incluem $highlight-color e $highlight-secondary.
+// Cores para Interação (Hover, Active, Focus):
+
+// As cores de interação são vitais para melhorar a experiência do usuário. Usamos cores específicas para o hover, focus, e active para dar feedback visual sobre as ações que o usuário pode realizar, como passar o mouse ou clicar em um botão.
+// Gradientes:
+
+// O gradiente pode ser usado em elementos como botões ou fundos para um toque mais moderno e dinâmico, como o $gradient-primary.
+// Escalas de Cinza:
+
+// As escalas de cinza permitem uma variedade de tons neutros, que são úteis para bordas, fundos e sombras.
+// Sombras e Opacidade:
+
+// Definimos $shadow-light, $shadow-medium, e $shadow-dark para usar nas sombras de elementos, o que ajuda a dar profundidade visual.
+// $transparent e outras variáveis de opacidade também ajudam a criar transparências em componentes.

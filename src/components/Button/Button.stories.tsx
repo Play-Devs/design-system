@@ -6,4 +6,8 @@ export default {
   component: Button,  
 };
 
-export const Base: React.FC = () => <Button label={'Click me'} onClick={() => {}} primary={''}></Button>;
+export const Base: React.FC = () => (
+  <Button onClick={() => {}} variant="solid">
+    Click me
+  </Button>
+);

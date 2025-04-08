@@ -1,4 +1,4 @@
-@use '../../styles/tokens/colors';
+@use '../../styles/tokens/colors' as colors;
 
 .button {
   padding: 12px 24px;
@@ -15,47 +15,47 @@
   height: 48px; 
 
   &--solid {
-    background-color: getColor("brand-pure");
-    color: getColor("bg-pure");
+    background-color: colors.getColor("brand-pure");
+    color: colors.getColor("bg-pure");
     
     &:hover {
-      background-color: getColor("brand-dark");
+      background-color: colors.getColor("brand-dark");
       transform: translateY(-2px);
     }
   }
 
   &--subtle {
-    background-color: getColor("brand-light"); 
-    color: getColor("brand-pure");
-    border: 2px solid getColor("brand-pure");
+    background-color: colors.getColor("brand-light"); 
+    color: colors.getColor("brand-pure");
+    border: 2px solid colors.getColor("brand-pure");
 
     &:hover {
-      background-color: getColor("brand-pure");
-      color: getColor("bg-pure");
+      background-color: colors.getColor("brand-pure");
+      color: colors.getColor("bg-pure");
       transform: translateY(-2px);
     }
   }
 
   &--outline {
     background-color: transparent;
-    color: getColor("brand-pure");
-    border: 2px solid getColor("neutral-2"); 
+    color: colors.getColor("brand-pure");
+    border: 2px solid colors.getColor("neutral-2"); 
 
     &:hover {
-      background-color: getColor("brand-pure");
-      color: getColor("bg-pure");
+      background-color: colors.getColor("brand-pure");
+      color: colors.getColor("bg-pure");
       transform: translateY(-2px);
     }
   }
 
   &--dark {
-    background-color: getColor("darkblue-pure");
-    color: getColor("bg-pure");
-    border: 2px solid getColor("darkblue-pure");
+    background-color: colors.getColor("darkblue-pure");
+    color: colors.getColor("bg-pure");
+    border: 2px solid colors.getColor("darkblue-pure");
 
     &:hover {
-      background-color: getColor("neutral-1");
-      color: getColor("bg-pure");
+      background-color: colors.getColor("neutral-1");
+      color: colors.getColor("bg-pure");
       transform: translateY(-2px);
     }
   }

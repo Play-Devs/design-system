@@ -4,7 +4,7 @@ function App() {
     return (
         <div className="App">
             <header style={{ padding: '20px', textAlign: 'center' }}>
-                <h1>Design System Demo</h1>
+                <h1>Play Devs Design System</h1>
                 <p>Se você está vendo este texto, o App está funcionando!</p>
                 <div style={{ margin: '20px' }}>
                     <Button 

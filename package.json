@@ -2,13 +2,12 @@
   "name": "design-system",
   "version": "1.0.0",
   "description": "",
-  "main": "build/index.js",
-  "module": "build/index.es.js",
+  "main": "src/main.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c",
+    "build": "vite build",
     "storybook": "storybook dev -p 6006",
-    "dev": "vite --host",
+    "dev": "vite --config vite.config.js --host --port 3000",
     "start": "concurrently \"npm run dev\" \"npm run storybook\""
   },
   "repository": {
@@ -50,6 +49,7 @@
     "rollup-plugin-sass": "^1.15.2",
     "rollup-plugin-scss": "^4.0.1",
     "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
     "sass": "^1.85.1",
     "sass-loader": "^16.0.5",
     "typescript": "^5.8.2",

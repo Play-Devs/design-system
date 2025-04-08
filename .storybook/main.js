@@ -9,13 +9,13 @@ module.exports = {
   viteFinal: (config) => {
     return {
       ...config,
-      css: {
-        preprocessorOptions: {
-          scss: {
-            additionalData: `@import "../styles/styles.scss";`, 
-          },
-        },
-      },
+      // css: {
+      //   preprocessorOptions: {
+      //     scss: {
+      //       additionalData: `@import "../styles/styles.scss";`, 
+      //     },
+      //   },
+      // },
     };
   },
 };
